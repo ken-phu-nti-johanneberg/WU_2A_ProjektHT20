@@ -1,3 +1,4 @@
+/* Generell styling för alla hemsidor */
 *{
     margin: 0px;
 }
@@ -16,19 +17,37 @@
     ;
 }
 
+.meny_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.meny_link{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+    color: black;
+}
+
+.meny_link:hover{
+    background-color: rgb(202, 199, 199);
+}
+
 header{
     grid-area: he;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 nav{
     grid-area: na;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-style: italic;
+    background-color: white;
+
 }
 
 main{
@@ -36,6 +55,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: whitesmoke;
+
 }
 
 footer{
@@ -43,4 +64,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: grey;
+
 }
