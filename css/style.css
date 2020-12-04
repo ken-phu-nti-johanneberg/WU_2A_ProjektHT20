@@ -4,11 +4,9 @@
 }
 
 .grid_wrapper{
-    width: 100vw;
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 4fr 1fr;
+    grid-template-rows: 100px 200px 500px 150px;
     grid-template-areas: 
     "he"
     "na"
@@ -19,21 +17,21 @@
 
 .meny_list{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-around;
     list-style-type: none;
 }
 
 .meny_link{
     text-decoration: none;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    font-family: 'Courier New', Courier, monospace; 
     padding: 15px;
     color: black;
 }
 
 .meny_link:hover{
-    background-color: rgb(202, 199, 199);
+    background-color: rgba(245, 245, 245, 0.801);
 }
 
 header{
@@ -42,6 +40,8 @@ header{
     align-items: center;
     justify-content: center;
     background-color: white;
+    font-family: 'Courier New', Courier, monospace; 
+
 }
 
 nav{
@@ -55,8 +55,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: whitesmoke;
-
+    background-color: white;
 }
 
 footer{
