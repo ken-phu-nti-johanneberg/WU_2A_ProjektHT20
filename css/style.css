@@ -55,7 +55,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-image: url("../img/kock.jpg");
+
 }
 
 footer{
@@ -66,3 +67,14 @@ footer{
     background-color: grey;
 
 }
+
+/* Styling för bilder */
+
+.a_la_carte{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mat{
+    
