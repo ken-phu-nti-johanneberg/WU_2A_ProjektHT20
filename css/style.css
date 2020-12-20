@@ -6,7 +6,7 @@
 .grid_wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 200px 500px 150px;
+    grid-template-rows: 100px 65px auto 80px;
     grid-template-areas: 
     "he"
     "na"
@@ -39,7 +39,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #7BFF85;
     font-family: 'Courier New', Courier, monospace; 
 
 }
@@ -47,34 +47,48 @@ header{
 nav{
     grid-area: na;
     background-color: white;
-
+    display: grid;
+    border: solid 2px black;
 }
 
 main{
     grid-area: ma;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../img/kock.jpg");
-
 }
 
 footer{
     grid-area: fo;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
+    background-color: #7BFF85;
 
+}
+
+#framsida_text{
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Courier New', Courier, monospace; 
+    color: black;
+}
+
+#info::before{
+    content: "\a";
+    white-space: pre;
 }
 
 /* Styling för bilder */
 
+#bakgrundsbild{
+    width: 100%;
+    height: auto;
+}
+
 .a_la_carte{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 .mat{
+    width: 400px;
+    height: auto;
     
+}
